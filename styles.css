@@ -2,106 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Figtree", sans-serif;
 }
 
 body{
-    background: #f4d04e; 
+    font-family: "Outfit", sans-serif;
+    background-color: #d6e2f0;
 }
 
-.component{
-    background-color: #fff;
-    width: 384px;
-    height: 480px;
+.general-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 112px; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 112px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 16px 16px 40px 16px;
+}
+
+.profile-container{
+    background-color: #fff;
+    padding: 16px 16px 40px 16px;
+    text-align: center;
     border-radius: 20px;
-    box-shadow: 6px 6px  #121212;
-    transition: box-shadow .3s ease;
+    width: 320px;
+    height: 499px;  
 }
 
-.component:hover{
-    box-shadow: 10px 10px  0 #121212;
-
+.profile-image img{
+    width: 288px;
+   height: 288px; 
+   border-radius: 10px;
 }
 
-.profile-section{
-    padding: 5px 24px 5px 24px;
-} 
-
-.profile-img img{
-    height: 200px;
-    border-radius: 10px;
+.note{
+    width: 288px;
+    height: 131px;
+    color: #1F314F;
+    padding: 24px 0px 40px 0px;
 }
 
-.details h5{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-color: #f4d04e;
-    width: 82px;
-    height: 29px;
-    margin: 15px 0px 10px 0px;
-    font-weight: 800;
-    font-size: 15px;
-    border-radius: 5px;
+.note h2{
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px; 
 }
 
-.details h7{
-    font-size: 12px;
+.note p{
+    width: 90%;
+    color: #68778d;
+    margin-left: 10px;
+    padding: 10px 0px 0px 0px;
 }
 
-.details h2{
-    font-weight: 800;
-    font-size: 20px;
-    margin: 8px 0px 10px 0px;
-}
-
-.details p{
-    color: 	#6b6b6b;
-    line-height: 1.4;
-    font-weight: 500;
-   
-}
-
-.greg {
-    margin-top: 15px;
-}
-
-.greg img{
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    gap: 10px
-}
-
-.greg h4{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.attribution{
-    margin-top: 40px;
+.challenge{
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-    .component{
-       width: 90%;
-       margin: 112px auto;
-    }
-
-    .profile-img img{
-        width: 100%;
-        border-radius: 10px;
-    }
+@media  ( min-width :468px)  {
+    
+.general-container{
+    
+    margin-top: 112px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 16px 40px 16px;
 }
-
+    .profile-container{
+        background-color: #fff;
+        padding: 16px 16px 40px 16px;
+        text-align: center;
+        border-radius: 20px;
+        width: 320px;
+        height: 499px;  
+    }
+    
+}
 
 
 
